@@ -65,7 +65,7 @@ namespace WishList.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginViewModel loginViewModel)
+        public async IActionResult Login(LoginViewModel loginViewModel)
         {
             if (ModelState.IsValid)
             {
